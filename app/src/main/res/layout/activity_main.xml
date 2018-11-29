@@ -31,7 +31,7 @@ limitations under the License. -->
         android:paddingEnd="@dimen/padding">
 
         <TextView
-            android:id="@+id/name_text"
+            android:id="@+id/tvName"
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@ limitations under the License. -->
         <!-- Use "@={aboutMe.nickname}" annotation to reference a property -->
         <!-- Reference the declared object (aboutMe) and the property (nickname). -->
         <TextView
-            android:id="@+id/nickname_text"
+            android:id="@+id/tvNickname"
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@ limitations under the License. -->
         <!-- Use "@={aboutMe.name}" annotation to reference a property -->
         <!-- Reference the declared object (aboutMe) and the property (name). -->
         <EditText
-            android:id="@+id/nickname_edit"
+            android:id="@+id/etNickname"
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@ limitations under the License. -->
             android:textAlignment="center" />
 
         <ImageView
-            android:id="@+id/star_image"
+            android:id="@+id/ivStar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/layout_margin"
@@ -81,13 +81,13 @@ limitations under the License. -->
             app:srcCompat="@android:drawable/btn_star_big_on" />
 
         <ScrollView
-            android:id="@+id/bio_scroll"
+            android:id="@+id/svBio"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/layout_margin">
 
             <TextView
-                android:id="@+id/bio_text"
+                android:id="@+id/tvBio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lineSpacingMultiplier="@dimen/line_spacing_multiplier"

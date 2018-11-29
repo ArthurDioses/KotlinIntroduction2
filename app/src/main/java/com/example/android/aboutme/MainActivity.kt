@@ -68,17 +68,17 @@ class MainActivity : AppCompatActivity() {
     private fun addNickname(view: View) {
         binding.apply {
             // Set the text for nicknameText to the value in nicknameEdit.
-            myName?.nickname = nicknameEdit.text.toString()
+            myName?.nickname = etNickname.text.toString()
             // Invalidate all binding expressions and request a new rebind to refresh UI
             invalidateAll()
             // Change which views are visible.
             // Remove the EditText and the Button.
             // With GONE they are invisible and do not occupy space.
-            nicknameEdit.visibility = View.GONE
+            etNickname.visibility = View.GONE
             doneButton.visibility = View.GONE
 
             // Make the TexView with the nickname visible.
-            nicknameText.visibility = View.VISIBLE
+            tvNickname.visibility = View.VISIBLE
         }
         // Hide the keyboard.
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
